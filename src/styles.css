@@ -4,7 +4,7 @@ html,body,#root{height:100%;margin:0}
 body{background:var(--bg);color:var(--ink);font-family:Arial,Calibri,Helvetica,sans-serif}
 .deck{height:100%;display:flex;flex-direction:column;padding:2vh 5vw;border:6px solid var(--blue)}
 .ref{color:var(--blue);font-size:clamp(12px,1.5vw,18px);font-weight:700}
-.slide{flex:1;overflow:auto;padding-top:1vh}
+.slide{position:relative;flex:1;overflow:auto;padding-top:1vh}
 h1{color:var(--blue);font-size:clamp(24px,3.6vw,46px);margin:0 0 2vh;padding-bottom:1.2vh;border-bottom:3px solid var(--blue)}
 .body.two{display:grid;grid-template-columns:1.1fr 1fr;gap:3vw;align-items:start}
 ul{margin:0;padding-left:1.4em;font-size:clamp(16px,2.3vw,30px);line-height:1.4;max-width:70ch}
@@ -13,6 +13,7 @@ li{margin-bottom:.6em}li::marker{color:var(--blue)}
 .ph{min-height:32vh;display:grid;place-items:center;color:var(--blue);font-weight:700;font-size:clamp(18px,2.4vw,30px);border:2px dashed var(--blue)}
 .visual img{width:100%;max-height:50vh;object-fit:contain}
 figcaption{color:var(--blue);font-size:clamp(12px,1.5vw,18px);margin-top:1vh}
+.presenter{position:absolute;left:0;bottom:2vh;color:var(--blue);font-size:clamp(16px,2vw,26px);font-weight:700;line-height:1.35}
 footer{display:flex;justify-content:space-between;align-items:center;color:var(--blue);font-weight:700}
 button{background:var(--blue);color:#fff;border:0;padding:.6em 1.2em;font-size:16px;cursor:pointer;border-radius:4px}
 button:disabled{opacity:.35;cursor:default}

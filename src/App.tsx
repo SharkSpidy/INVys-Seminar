@@ -36,6 +36,7 @@ export default function App() {
           <ul>{s.bullets.map((b, k) => <li key={k}>{b}</li>)}</ul>
           {s.visual && <Visual v={s.visual} />}
         </div>
+        {s.presenter && <div className="presenter"><div>{s.presenter.name}</div><div>{s.presenter.id}</div></div>}
       </section>
       <footer>
         <button onClick={() => go(-1)} disabled={i === 0} aria-label="Previous slide">Previous</button>
